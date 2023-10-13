@@ -1,0 +1,8 @@
+<mat-grid-list cols="2" rowHeight="2:1" class="dogTable" >
+  <div *ngFor="let dog of dogs">
+    <mat-grid-tile>
+      <app-dog-card [dogName]="dog.breed" [dogImg]="dog.img"></app-dog-card>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>
+
